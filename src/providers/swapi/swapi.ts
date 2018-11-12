@@ -18,28 +18,13 @@ export class SwapiProvider {
     return this.get(this.baseUrl + endpoint)
   }
 
-  getFilm(id): any {
-    let endpoint = 'films/' + id;
-    return this.get(this.baseUrl + endpoint);
-  }
-
   getVehicles(): any {
     let endpoint = 'vehicles/';
     return this.get(this.baseUrl + endpoint);
   }
 
-  getVehicle(id): any {
-    let endpoint = 'vehicles/' + id;
-    return this.get(this.baseUrl + endpoint);
-  }
-
   getStarships(): any {
     let endpoint = 'starships/';
-    return this.get(this.baseUrl + endpoint);
-  }
-
-  getStarship(id): any {
-    let endpoint = 'starships/' + id;
     return this.get(this.baseUrl + endpoint);
   }
 

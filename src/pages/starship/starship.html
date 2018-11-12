@@ -1,12 +1,28 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>starship</ion-title>
+        <ion-title>{{starship.name}}</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-card>
+        <img src="./assets/imgs/starships/noimagen.jpg" />
+        <ion-card-content>
+            <ion-card-title>
+                {{starship.name}}
+            </ion-card-title>
+            <p><strong>Modelo:</strong> {{starship.model}}</p>
+            <p><strong>Fabricante:</strong> {{starship.manufacturer}}</p>
+            <p><strong>Costo en creditos:</strong> {{starship.cost_in_credits | currency}}</p>
+            <p><strong>Pasajeros:</strong> {{starship.pasajeros}}</p>
+            <p><strong>Calificación de hiperimpulsión:</strong> {{starship.hyperdrive_rating}}</p>
+            <p><strong>MGLT:</strong> {{starship.MGLT}}</p>
+
+        </ion-card-content>
+    </ion-card>
 
 </ion-content>

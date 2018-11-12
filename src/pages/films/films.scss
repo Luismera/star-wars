@@ -1,3 +1,18 @@
 page-films {
-
+    .title-film {
+        position: absolute;
+        background: #ff8b13;
+        text-align: center;
+        color: #fff;
+        top: 5px;
+        margin: 0;
+        left: 5px;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        right: 5px;
+    }
+    .cover-film {
+        border: 2px solid #fff;
+    }
 }

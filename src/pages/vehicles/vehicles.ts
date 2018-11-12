@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SwapiProvider } from '../../providers/swapi/swapi';
+import { VehiclePage } from '../vehicle/vehicle';
 
 @Component({
   selector: 'page-vehicles',
@@ -19,5 +20,9 @@ export class VehiclesPage {
     })
 
   };
+
+  viewVehicleDetail( vehicle:any ){
+    this.navCtrl.push(VehiclePage, vehicle)
+  }
 
 }

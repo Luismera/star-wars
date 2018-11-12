@@ -15,6 +15,7 @@ import { VehiclePage } from '../pages/vehicle/vehicle';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SwapiProvider } from '../providers/swapi/swapi';
+import { NoimagePipe } from '../pipes/noimage/noimage';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SwapiProvider } from '../providers/swapi/swapi';
     StarshipsPage,
     StarshipPage,
     VehiclesPage,
-    VehiclePage
+    VehiclePage,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 {
   "name": "star-wars",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

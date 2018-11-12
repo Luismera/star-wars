@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SwapiProvider } from '../../providers/swapi/swapi';
+import { FilmPage } from '../film/film';
 
 @Component({
   selector: 'page-films',
@@ -19,5 +20,14 @@ export class FilmsPage {
     })
 
   }
+
+  filmImg(cover_id:string){
+    return './assets/imgs/covers/episode_'+cover_id+'.jpg'
+  }
+  
+  viewFilmDetail( film:any ){
+    this.navCtrl.push(FilmPage, film)
+  }
+  
 
 }

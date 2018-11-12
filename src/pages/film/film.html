@@ -1,12 +1,24 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>film</ion-title>
+        <ion-title>{{film.title}}</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-card>
+        <img [src]="film.episode_id | noimage" />
+        <ion-card-content>
+            <ion-card-title>
+                {{film.title}}
+            </ion-card-title>
+            <p>
+                {{film.opening_crawl}}
+            </p>
+        </ion-card-content>
+    </ion-card>
 
 </ion-content>

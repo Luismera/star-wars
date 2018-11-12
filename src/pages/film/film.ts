@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { SwapiProvider } from '../../providers/swapi/swapi';
 
 @Component({
   selector: 'page-film',
@@ -11,13 +10,10 @@ export class FilmPage {
   film:any = {};
 
   constructor(public navCtrl: NavController, 
-              public navParams: NavParams,
-              public swapiProv: SwapiProvider) {
+              public navParams: NavParams) {
     
-    this.swapiProv.getFilm( navParams.data['id'] ).subscribe( data => {
-      this.film = data;
-    })
-    
+    this.film = this.navParams.data
+
   };
 
 }
