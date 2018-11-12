@@ -8,9 +8,16 @@ import { SwapiProvider } from '../../providers/swapi/swapi';
 })
 export class VehiclePage {
 
+  vehicle:any = {};
+
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
               public swapiProv: SwapiProvider) {
+
+    this.swapiProv.getVehicle( navParams.data['id'] ).subscribe( data => {
+      this.vehicle = data;
+    })
+
   };
 
 }

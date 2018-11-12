@@ -8,9 +8,16 @@ import { SwapiProvider } from '../../providers/swapi/swapi';
 })
 export class FilmPage {
 
+  film:any = {};
+
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
               public swapiProv: SwapiProvider) {
+    
+    this.swapiProv.getFilm( navParams.data['id'] ).subscribe( data => {
+      this.film = data;
+    })
+    
   };
 
 }

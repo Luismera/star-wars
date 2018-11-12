@@ -8,9 +8,16 @@ import { SwapiProvider } from '../../providers/swapi/swapi';
 })
 export class StarshipPage {
 
+  starship:any = {};
+
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
               public swapiProv: SwapiProvider) {
+
+    this.swapiProv.getStarship( navParams.data['id'] ).subscribe( data => {
+      this.starship = data;
+    })
+
   };
 
 }
