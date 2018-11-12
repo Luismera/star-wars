@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-films',
-  templateUrl: 'films.html',
+  templateUrl: 'films.html'
 })
 export class FilmsPage {
 
